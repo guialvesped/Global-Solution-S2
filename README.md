@@ -1,36 +1,29 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# EcoSmart
+## Plataforma de Economia com Energias Renováveis 🌱💡
+Descrição do Projeto
+O projeto consiste no desenvolvimento de uma plataforma web inovadora, que permite aos usuários calcular:
 
-## Getting Started
+- Economia financeira ao adotar energias renováveis em suas residências.
+- Impacto ambiental positivo, evidenciado pela redução das emissões de carbono.
+De forma intuitiva e amigável, o site ajudará os usuários a compreender como o uso de energias renováveis pode beneficiar suas finanças e contribuir para a preservação do meio ambiente.
 
-First, run the development server:
+## Funcionalidades
+1. Cálculo de Economia Financeira
+- Insira dados como consumo médio mensal de energia elétrica e localização.
+- Receba uma estimativa de quanto poderia ser economizado na conta de luz.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+2. Impacto Ambiental Positivo
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Visualize a quantidade de emissões de carbono evitadas com o uso de energia solar.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Interface Responsiva e Moderna
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Interface construída com Tailwind CSS, proporcionando usabilidade em qualquer dispositivo.
+- Gráficos e comparações que ajudam o usuário a entender os benefícios.
+- Simulações Personalizadas
 
-## Learn More
+## Tecnologias Utilizadas
+- Next.js: Framework React para renderização no lado do servidor e geração de sites estáticos.
+- Tailwind CSS: Framework CSS utilitário para estilização rápida e eficiente.
+- JavaScript/TypeScript: Código limpo e tipado para maior segurança e desempenho.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
