@@ -18,7 +18,7 @@ const Footer : React.FC = () => {
                   <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Sobre</h2>
                   <ul className="text-gray-500 dark:text-gray-400 font-medium">
                       <li className="mb-4">
-                          <a href="h/" className="hover:underline">Nós</a>
+                          <a href="/about" className="hover:underline">Nós</a>
                       </li>
                       <li>
                           <a href="https://github.com/guialvesped/Global-Solution-S2" target="_blank" className="hover:underline">Nosso projeto</a>
