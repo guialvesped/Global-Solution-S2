@@ -89,6 +89,43 @@ export default function Home() {
           </a>
         </div>
       </div>
+      {seeResults &&
+      <>
+      <h1 className="text-center text-4xl">Resultados</h1>
+      <div id="result" className="box-border m-8 flex flex-row justify-around gap-8">
+        <div className="flex flex-col items-center p-6 rounded-md border-solid border-2 border-gray-700">
+          <img className="w-20 mb-2" src="/sol.svg" alt="Sol" />
+          <h3 className="text-3xl">{horasMes}h</h3> 
+          Horas de sol por dia
+        </div>
+        <div className="flex flex-col items-center p-6 rounded-md border-solid border-2 border-gray-700">
+          <img className="w-20 mb-2" src="/folhinha.svg" alt="Sol" />
+          <h3 className="text-3xl">{energiaGerada}kWh</h3> 
+          Energia Gerada ao mês
+        </div>
+        <div className="flex flex-col text-center items-center p-6 rounded-md border-solid border-2 border-gray-700">
+          <img className="w-20 mb-2" src="/raio.svg" alt="Sol" />
+          <h3 className="text-3xl">{energiaGasta}kWh</h3> 
+          Energia gasta em seu <br />último mês
+        </div>
+        <div className="flex flex-col text-center items-center p-6 rounded-md border-solid border-2 border-gray-700">
+          <img className="w-20 mb-2" src="/save.svg" alt="Sol" />
+          <h3 className="text-3xl">{energiaGerada}kWh</h3> 
+          Energia Economizada
+        </div>
+        <div className="flex flex-col text-center items-center p-6 rounded-md border-solid border-2 border-gray-700">
+          <img className="w-20 mb-2" src="/money.svg" alt="Sol" />
+          <h3 className="text-3xl">{percEconomia}%</h3> 
+          Porcentagem de Dinheiro<br />economizado
+        </div>
+        <div className="flex flex-col text-center items-center p-6 rounded-md border-solid border-2 border-gray-700">
+          <img className="w-20 mb-2" src="/planeta.svg" alt="Sol" />
+          <h3 className="text-3xl">{reducaoCarbono}Kg</h3> 
+          Redução de carbono gerado
+        </div>
+      </div>
+      </>
+      }
     </main>
     <Footer/>
     </>
