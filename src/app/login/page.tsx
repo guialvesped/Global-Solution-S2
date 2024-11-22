@@ -1,6 +1,5 @@
 "use client";
 import axios from "axios";
-import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 
@@ -75,8 +74,11 @@ export default function Login() {
   };
 
   const toggleVisibility = (type: "password" | "confirm") => {
-    setPasswordVis(!passwordVis);
-    setConfirmPasswordVis(!confirmPasswordVis);
+    if (type === "password") {
+      setPasswordVis((prev) => !prev);
+    } else if (type === "confirm") {
+      setConfirmPasswordVis((prev) => !prev);
+    }
   };
 
   return (
@@ -168,7 +170,7 @@ export default function Login() {
         <button
           type="button"
           className="absolute inset-y-0 end-4 flex items-center ps-3.5"
-          onClick={() => toggleVisibility("confirm")}
+          onClick={() => toggleVisibility("password")}
         >
           {passwordVis ? (
             <svg
