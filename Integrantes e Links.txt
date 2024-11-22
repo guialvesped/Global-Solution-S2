@@ -7,3 +7,4 @@ Sala: 1TDSPZ
 
 Link do repositório: https://github.com/guialvesped/Global-Solution-S2
 Link do youtube: https://youtu.be/F-frPgQGQcI
+Link do Vercel: https://global-solution-s2.vercel.app/
