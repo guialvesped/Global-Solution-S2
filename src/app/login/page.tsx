@@ -117,7 +117,7 @@ export default function Login() {
       <h3 className="pt-4 text-2xl">
         Faça seu {hasAccount ? "login" : "cadastro"}:
       </h3>
-      <label className=" pt-4 block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+      <label className=" pt-4 block mb-2 text-sm font-medium text-white">
         Email:
       </label>
       <div className="relative ">
@@ -143,7 +143,7 @@ export default function Login() {
           placeholder="nome@gmail.com"
         />
       </div>
-      <label className="pt-4 block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+      <label className="pt-4 block mb-2 text-sm font-medium text-white">
         Senha:
       </label>
       <div className="relative flex flex-row">
@@ -197,7 +197,7 @@ export default function Login() {
       </div>
       {!hasAccount && (
         <>
-          <label className="pt-4 block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+          <label className="pt-4 block mb-2 text-sm font-medium text-white">
             Confirme sua senha:
           </label>
           <div className="relative">
