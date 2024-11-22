@@ -84,9 +84,7 @@ export default function Login() {
       onSubmit={hasAccount ? handleLogin : handleSignUp}
       className="mt-28 rounded-md max-w-sm mx-auto bg-gray-800 p-16 "
     >
-      <Link href="/" className="flex items-center">
         <img src="/logo-def.png" className="h-12" alt="Logo EcoSnart" />
-      </Link>
       <div className="w-full pt-4">
         <div
           className="grid max-w-xs grid-cols-2 gap-1 p-1 mx-auto my-2 bg-gray-100 rounded-lg dark:bg-gray-600"
@@ -120,7 +118,7 @@ export default function Login() {
         Faça seu {hasAccount ? "login" : "cadastro"}:
       </h3>
       <label className=" pt-4 block mb-2 text-sm font-medium text-gray-900 dark:text-white">
-        Email:{" "}
+        Email:
       </label>
       <div className="relative ">
         <div className="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
@@ -256,7 +254,7 @@ export default function Login() {
       <div className="flex justify-center pt-4">
         <button
           type="submit"
-          className="inline-block px-6 py-2.5 text-xs font-medium text-white uppercase bg-blue-600 rounded-md hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          className="inline-block px-6 py-2.5 text-white bg-blue-600 rounded-md hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
         >
           {hasAccount ? "Login" : "Cadastrar"}
         </button>

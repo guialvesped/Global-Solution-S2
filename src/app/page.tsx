@@ -58,22 +58,22 @@ export default function Home() {
             Pegue sua ultima conta de luz para obter as informações necessárias e preencha os campos abaixo
           </p>
 
-        <div className="flex flex-wrap gap-8 p-8 items-center w-full bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-full dark:border-gray-700 dark:bg-gray-800">
-          <label className="block w-1/3 mb-2 text-sm font-medium text-gray-900 dark:text-white">
+        <div className="flex flex-col md:flex-wrap gap-8 p-8 w-full bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-full dark:border-gray-700 dark:bg-gray-800">
+          <label className="block w-full md:w-1/3 mb-2 text-sm font-medium text-gray-900 dark:text-white">
             Insira o seu kWh que foi consumido no ultimo mês:
             <input onChange={(e : React.ChangeEvent<HTMLInputElement>) => {setEnergiaGasta(parseFloat(e.target.value) )}} type="number" aria-describedby="helper-text-explanation" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="kWh" required />
             <a className="text-gray-500 text-">
               De acordo com sua conta de luz
             </a>
           </label>
-          <label className="block w-1/3 mb-2 text-sm font-medium text-gray-900 dark:text-white">
+          <label className="block w-full md:w-1/3 mb-2 text-sm font-medium text-gray-900 dark:text-white">
             Insira a potencia dos paineis que pretende instalar:
             <input onChange={(e : React.ChangeEvent<HTMLInputElement>) => {setPotencia(parseFloat(e.target.value) )}} type="number" aria-describedby="helper-text-explanation" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Potencia" required />
             <a className="text-gray-500 text-">
               Um painel solar individual geralmente tem uma potência que varia de 300 a 600 watts (W)
             </a>
           </label>
-          <label className="block w-1/3 mb-2 text-sm font-medium text-gray-900 dark:text-white">
+          <label className="block w-full md:w-1/3 mb-2 text-sm font-medium text-gray-900 dark:text-white">
             Insira a quantidade de paineis que deseja instalar:
             <input onChange={(e : React.ChangeEvent<HTMLInputElement>) => {setNumPaineis(parseFloat(e.target.value) )}} type="number" aria-describedby="helper-text-explanation" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Quantidade de Paineis" required />
             <a className="text-gray-500 text-">
@@ -92,7 +92,7 @@ export default function Home() {
       {seeResults &&
       <>
       <h1 className="text-center text-4xl">Resultados</h1>
-      <div id="result" className="box-border m-8 flex flex-row justify-around gap-8">
+      <div id="result" className="box-border m-8 flex flex-col sm:flex-col md:flex-col lg:flex-row  justify-around gap-8">
         <div className="flex flex-col items-center p-6 rounded-md border-solid border-2 border-gray-700">
           <img className="w-20 mb-2" src="/sol.svg" alt="Sol" />
           <h3 className="text-3xl">{horasMes}h</h3> 

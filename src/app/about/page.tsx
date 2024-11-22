@@ -12,6 +12,10 @@ export default function AboutUs(){
         <>
         <Header/>
         <div className=" mt-8 grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-4 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+        <h1 className="flex flex-row items-center gap-1 text-center text-4xl">
+            <img className="w-12" src="/icon.png" alt="Icon da Logo" />
+            Sobre nós
+        </h1>
         <a href="https://github.com/guialvesped/Global-Solution-S2" target="_blank">
             <button className="relative inline-flex rounded-full items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-cyan-400 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
                 <span className="relative flex flex-row items-center gap-x-2 text-base px-5 py-2.5 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
